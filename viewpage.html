@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Placement portal</title>
+  <link rel="stylesheet" href="view.css">
+  <link rel="icon" href="./img/favicon.jpg">
+  <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase.js"></script>
+  <script src="script.js" charset="utf-8"></script>
+</head>
+
+<body class="bg">
+  <div class="heading">
+    
+  </div>
+ <br>
+
+  <h4>Enter your CGPA</h4>
+  <br>
+  <br>
+  <select class="dropbtn" id="choice" name="branch">
+    <option value="six">6 and Above</option>
+    <option value="seven">7 and Above</option>
+    <option value="sevenfive">7.5 and Above</option>
+    <option value="eight">8 and Above</option>
+    <option value="eightfive">8.5 and Above</option>
+  </select>
+  <button id="b" onclick="search()"> Search </button>
+  <br>
+  <br>
+  <table>
+
+    <tr class="trigger" id="tri">
+      <th>Name &nbsp &nbsp &nbsp </th>
+      <th>Domain</th>
+      <th>package &nbsp</th>
+      <th>Date  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp</th>
+      <th>Email   &nbsp &nbsp &nbsp &nbsp </th>
+      <th>Location</th>
+    </tr>
+    <tr id="results">
+    </tr>
+  </table>
+  <button id="b" onclick="okay()"> Okay </button>
+  </body>
+
+</html>

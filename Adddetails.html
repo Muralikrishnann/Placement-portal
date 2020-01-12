@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta>
+  <title>Add Company info</title>
+  <link rel="stylesheet" href="addstyle.css">
+  <link rel="icon" href="./img/favicon.jpg">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,600,400italic" rel="stylesheet">
+  <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase.js"></script>
+  <script src="script.js" charset="utf-8"></script>
+</head>
+
+<body>
+  <br>
+  <div class="heading">
+   
+  </div>
+  <div class="container">
+    <form id="contact" method="post">
+     
+      <br>
+    <center> <h3>Add Company Information</h3></center>
+      <br>
+      <fieldset>
+        <h4>Company Name :</h4>
+        <input placeholder="Enter company name" id="name" type="text" tabindex="1" required autofocus>
+      </fieldset>
+
+      <fieldset>
+        <h4>Company Id or No :</h4>
+        <input placeholder="Enter unique company no" id="id" type="number" tabindex="1" required autofocus>
+      </fieldset>
+
+      <fieldset>
+        <h4>Eligibility criteria :</h4>
+        <select class="dropbtn" id="choice" name="branch">
+          <option value="six">6 and Above</option>
+          <option value="seven">7 and Above</option>
+          <option value="sevenfive">7.5 and Above</option>
+          <option value="eight">8 and Above</option>
+          <option value="eightfive">8.5 and Above</option>
+        </select>
+      </fieldset>
+
+      <fieldset>
+        <h4> Package in (Lac):</h4>
+        <input placeholder="Salary in lac" id="package" type="number"  required autofocus>
+      </fieldset>
+      
+      <fieldset>
+        <h4>Email id :</h4>
+        <input placeholder="Company contact email" id="email" type="email"  required autofocus>
+      </fieldset>
+
+      <fieldset>
+        <h4>Designation :</h4>
+        <input placeholder="Enter job domain" id="designation" type="text"  required autofocus>
+      </fieldset>
+
+      <fieldset>
+        <h4> Date:</h4>
+        <input  id="date" type="date"  required autofocus>
+      </fieldset>
+
+      <fieldset>
+        <h4>Venue :</h4>
+        <input placeholder="Interview location" id="locality" type="text"  required autofocus>
+      </fieldset>
+      
+      <fieldset>
+        <button name="submit" type="button" id="details-submit" onclick="addinfo();">Submit</button>
+      </fieldset>
+
+      <fieldset>
+        <button name="submit" type="button" id="details-submit" onclick="add();">Find Details</button>
+      </fieldset>
+  
+    </form>
+  </div>
+</body>
+
+</html>
